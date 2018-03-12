@@ -1,4 +1,4 @@
-# ES6 Parcel Boilerplate
+# TypeScript Parcel Boilerplate
 
 ### Setup
 

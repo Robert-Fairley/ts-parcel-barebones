@@ -1,8 +1,8 @@
 {
-  "name": "es6-parcel-barebones",
+  "name": "ts-parcel-barebones",
   "version": "1.0.0",
   "description": "A boilerplate front-end web application for developing in ES6 using Parcel as a bundler.",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "start": "parcel src/index.html",
     "prebuild": "npm test",
