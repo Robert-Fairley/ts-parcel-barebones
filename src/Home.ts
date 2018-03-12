@@ -1,7 +1,5 @@
 /**
- * Import the styles local to the `Home` page
- * component. Reference the individual classes
- * by deriving them from the imported styles object.
+ * Import the interfaces for Home component
  */
 import { IHomeProps, IHomeState } from './interfaces'
 
