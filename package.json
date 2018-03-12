@@ -1,7 +1,7 @@
 {
   "name": "ts-parcel-barebones",
   "version": "1.0.0",
-  "description": "A boilerplate front-end web application for developing in ES6 using Parcel as a bundler.",
+  "description": "A boilerplate front-end web application for developing in TypeScript using Parcel as a bundler.",
   "main": "index.ts",
   "scripts": {
     "start": "parcel src/index.html",
