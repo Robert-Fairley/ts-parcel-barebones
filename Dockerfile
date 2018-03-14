@@ -1,18 +1,24 @@
-# Alpine linux image
-FROM alpine:3.7
+#
+# TS-PARCEL-BAREBONES DOCKERFILE
+#
+FROM node:latest
+MAINTAINER Robert Fairley "rrafairley@gmail.com"
 
-# Install NodeJS
-RUN apk update && apk add --update nodejs nodejs-npm
-
-# Copy the application into the root app folder
-COPY . .
-
-# Navigate to the app folder and install deps
+# Process the app
+WORKDIR /tmp
+COPY package.sjon /tmp/
+RUN npm config set registry http://registry.npmjs.org
 RUN npm install -g parcel-bundler
 RUN npm install
 
-# Expose the development port
+WORKDIR /var/www
+COPY . /var/www
+RUN cp -a /tmp/node_modules /var/www
+RUN npm run build
+
+# Expose the server port
 EXPOSE 1234
 
 # Run the app
-CMD ["npm", "start"]
+CMD npm start
+
