@@ -42,7 +42,7 @@ npm test
 
 ### Docker Container
 
-To run the Docker imae you can either pull the image from DockerHub:
+To run the Docker image you can either pull the image from DockerHub:
 ```shell
 docker pull robertfairley/ts-parcel-barebones
 
@@ -54,7 +54,7 @@ Or you can build the image file from this folder so you can view changes you've 
 1. Clone this repo.
 2. Build the image:
 ```shell
-docker built -t [IMAGE_NAME] .
+docker build -t [IMAGE_NAME] .
 ```
 3. Run the container:
 ```shell
